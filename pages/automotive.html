@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Healthcare Industry */
+        /* Jumbotron */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 115%;
+        }
+
+        ul {
+            font-size: 17px;
+        }
+
+        li {
+            font-size: 18px;
+        }
+
+        /* body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+} */
+
+        body[data-aos-duration='4000'] [data-aos],
+        [data-aos][data-aos][data-aos-duration='4000'] {
+            transition-duration: 4000ms;
+        }
+
+        .wrap {
+            width: 100%;
+        }
+
+
+
+        .main-jumbotron {
+            background: url(../resources/automotive_banner.png);
+            width: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-top: 70px;
+            margin: 0 auto;
+            height: 854px;
+            margin-top: 83px;
+        }
+
+        /* navigation */
+        .healthcare-navigation {
+            background-color: #FF4500;
+            height: 20px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            /* margin-top: -65px; */
+            color: white;
+            padding-left: 8.5%;
+        }
+
+        .healthcare-navigation li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .healthcare-navigation a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .dropbtn1 {
+            background-color: #FF4500;
+            display: inline;
+            color: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 12px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content1 {
+            display: none;
+            /* position: absolute; */
+            z-index: 1;
+            min-width: 800px;
+        }
+
+        .dropdown-content1 a {
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 550;
+            font-size: 10px;
+        }
+
+        .dropdown:hover .dropdown-content1 {
+            display: inline-block;
+        }
+
+        .healthcare-arrow {
+            height: 9px;
+        }
+
+        .services-arrow {
+            height: 9px;
+            margin: 5px;
+        }
+
+        .nav-health {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-size: 18px;
+        }
+
+        .nav-services {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-size: 18px;
+        }
+
+        /* navigation ends */
+
+        /* main content */
+        /* New content added start */
+        .healthcare-head-content {
+            position: absolute;
+            left: 8.5%;
+            top: 25%;
+        }
+
+
+
+        .healthcare-main-icon {
+            width: 87px;
+            height: 39px;
+            margin-bottom: 20px;
+        }
+
+        .heathcare-head-content p {
+            width: 70%;
+        }
+
+        .healthcare-head-content-p1 {
+            width: 28%;
+            font-size: 18px;
+            line-height: 128%;
+            margin-top: 20px;
+        }
+
+        .healthcare-head-content-p2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 60px;
+        }
+
+        .orange-bullet1 {
+
+            height: 14px;
+            margin-right: 10px;
+            margin-top: 7px;
+
+        }
+
+        .healthcare-head-content-p1 span::before {
+            content: "\A";
+            white-space: pre;
+        }
+
+        .using-state {
+            width: 20%;
+        }
+
+        .manage-data{
+            width: 16%;
+        }
+
+        .orange-bullet {
+            height: 25px;
+            margin-right: 11px;
+        }
+
+        .orange-bullet-points-1 {
+            width: 85%;
+            padding-top: 5px;
+            padding-right: 36px;
+            font-size: 18px;
+            line-height: 115%;
+            margin-bottom: 10px;
+        }
+
+        .orange-bullet-points-2 {
+            width: 80%;
+            padding-top: 5px;
+            padding-right: 0;
+            font-size: 18px;
+            line-height: 115%;
+        }
+
+        .orange-bullet-points-3 {
+            width: 90%;
+            padding-top: 5px;
+            padding-right: 13px;
+            font-size: 18px;
+            line-height: 115%;
+
+        }
+
+        .orange-bullet-points-1 span::before,
+        .orange-bullet-points-2 span::before,
+        .orange-bullet-points-3 span::before {
+            content: "\A";
+            white-space: pre;
+        }
+
+
+        .healthcare-head-content-p3 {
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+
+        .healthcare-services-main-div {
+            width: 100%;
+            padding: 30px 8.5%;
+        }
+
+        .healthcare-services-main-div * {
+            color: rgba(0, 0, 0, 0.9);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .healthcare-services-heading {
+            color: #5d318a;
+            letter-spacing: 7px;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .social-analytics h1,
+        .medical-device h1,
+        .clinical-research h1,
+        .ai-diagnostics h1 {
+            margin: 20px 0 20px 0;
+            font-size: 30px;
+        }
+
+        /* .border{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+        padding-top: 80px;
+    } */
+
+        .social-analytics-text p {
+            width: 108%;
+            /* padding-bottom: 130px; */
+        }
+
+        .social-analytics-text img {
+            width: 325px;
+            height: 233px;
+            margin-top: 30px;
+            margin-bottom: 250px;
+        }
+
+        .medical-device-text p {
+            width: 106%;
+            /* padding-bottom: 130px; */
+        }
+
+        .medical-device-text img {
+            width: 325px;
+            height: 319px;
+            margin-top: 30px;
+            margin-bottom: 250px;
+        }
+
+        .predictive-analytics p {
+            width: 107%;
+        }
+
+        .predictive-analytics img {
+            width: 325px;
+            height: 264px;
+            margin-top: 30px;
+            margin-bottom: 88px;
+        }
+
+        .fleet-management p {
+            width: 105%;
+        }
+
+        .fleet-management img {
+            width: 325px;
+            height: 172px;
+            margin-top: 30px;
+            margin-bottom: 88px;
+        }
+
+
+        .medical-device-ul-div ul {
+            margin-top: 10px;
+        }
+
+        .medical-device-ul-div img {
+            width: 15px;
+            height: 11px;
+            position: relative;
+            top: 3px;
+            margin-top: 0;
+        }
+
+
+        .manufacturing-value-p2 {
+            margin-top: 10px;
+        }
+
+        .warranty-analytics-p2 {
+            margin-top: 10px;
+        }
+
+        .predictive-analytics-p2 {
+            margin-top: 10px;
+        }
+
+        .predictive-analytics-p3 {
+            margin-top: 10px;
+        }
+
+        .fleet-management-p2 {
+            margin-top: 10px;
+        }
+
+        .fleet-management-p3 {
+            margin-top: 10px;
+        }
+
+        .healthcare-nav-items a {
+            font-size: 12px;
+        }
+
+        .spacebottom {
+            height: 30px;
+        }
+
+        #manufacturing {
+            scroll-margin-top: 90px !important;
+        }
+
+        #warranty {
+            scroll-margin-top: 90px !important;
+        }
+
+        #predictive {
+            scroll-margin-top: 90px !important;
+        }
+
+        #fleet {
+            scroll-margin-top: 90px !important;
+        }
+
+        /* New content added end */
+
+        /* Media Query */
+
+        /* 1366 * 768 */
+        @media only screen and (min-width: 1281px) and (max-width: 1366px) {
+
+            .main-jumbotron {
+                background-size: 100% !important;
+                margin-bottom: -250px;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 29%;
+                font-size: 13px;
+                line-height: 128%;
+            }
+
+            .healthcare-head-content-p2 {
+                font-size: 13px;
+                margin-top: 40px;
+            }
+
+            .healthcare-head-content-p3 {
+                font-size: 13px;
+            }
+
+            .orange-bullet1 {
+                height: 12px;
+                margin-top: 5px;
+            }
+
+            .orange-bullet {
+                height: 19px;
+                margin-right: 11px;
+            }
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2 {
+                font-size: 13px;
+            }
+
+
+
+            .social-analytics-text p {
+                width: 80%;
+            }
+
+            .img-width {
+                width: 58% !important;
+            }
+
+            .p-width01,
+            .p-width02 {
+                width: 106% !important;
+            }
+
+            .p-width {
+                width: 104% !important;
+            }
+
+            .p-width1 {
+                width: 102% !important;
+            }
+
+            .social-analytics-text img {
+                width: 305px;
+                height: 219px;
+                margin-top: 30px;
+            }
+
+            .medical-device-text img {
+                width: 305px;
+                height: 299px;
+                margin-top: 30px;
+
+            }
+
+            .predictive-analytics img {
+                width: 305px;
+                height: 247px;
+                margin-top: 30px;
+
+            }
+
+            .fleet-management img {
+                width: 305px;
+                height: 161px;
+                margin-top: 30px;
+                margin-bottom: 250px;
+            }
+
+            .navbar-bottom-right {
+                top: 500px;
+            }
+
+
+        }
+
+        /* 1600 * 900 */
+        @media only screen and (min-width: 1367px) and (max-width: 1600px) {
+
+            .main-jumbotron {
+                background-size: 100% !important;
+                margin-bottom: -130px;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 29%;
+                font-size: 16px;
+                line-height: 128%;
+            }
+
+            .healthcare-head-content-p2 {
+                margin-top: 32px;
+            }
+
+            .healthcare-head-content-p2 {
+                font-size: 16px;
+            }
+
+            .orange-bullet {
+                height: 23px;
+            }
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2,
+            .orange-bullet-points-3 {
+                font-size: 16px;
+            }
+
+            .healthcare-head-content-p3 {
+                font-size: 16px;
+            }
+
+            .healthcare-services-heading {
+                font-size: 16px;
+            }
+
+            .social-analytics {
+                margin-top: 10px;
+            }
+
+            .social-analytics h1,
+            .medical-device h1,
+            .clinical-research h1,
+            .ai-diagnostics h1 {
+                margin: 0px 0 12px 0;
+            }
+
+            .img-width {
+                width: 48% !important;
+            }
+
+
+
+            .p-width {
+                width: 84%;
+            }
+
+            .last-p3 {
+                width: 83% !important;
+            }
+
+            .social-analytics-text img {
+                width: 315px;
+                height: 226px;
+                margin-top: 30px;
+            }
+
+            .medical-device-text img {
+                width: 315px;
+                height: 309px;
+                margin-top: 30px;
+            }
+
+            .predictive-analytics img {
+                width: 315px;
+                height: 255px;
+                margin-top: 30px;
+                margin-bottom: 250px;
+
+            }
+
+            .fleet-management img {
+                width: 315px;
+                height: 167px;
+                margin-top: 30px;
+                margin-bottom: 250px;
+            }
+
+            .navbar-bottom-right {
+                top: 625px;
+            }
+
+            .fleet-management p {
+                width: 105% !important;
+            }
+
+        }
+
+        /* 1280 * 720 */
+        @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+            .main-jumbotron {
+                background-size: 100% !important;
+                margin-bottom: -290px;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 30%;
+                font-size: 12px;
+                line-height: 128%;
+            }
+
+
+            .healthcare-head-content-p2 {
+                margin-top: 30px;
+            }
+
+            .healthcare-head-content-p3 {
+                font-size: 12px;
+            }
+
+            .orange-bullet {
+                height: 19px;
+            }
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2,
+            .orange-bullet-points-3 {
+                font-size: 11px;
+            }
+
+            .social-analytics {
+                margin-top: 10px;
+            }
+
+            .img-width {
+                width: 48% !important;
+            }
+
+            .social-analytics-text p {
+                width: 136%;
+            }
+
+            .medical-device-text .last-p1,
+            .last-p2 {
+                width: 139%
+            }
+
+            .predictive-analytics p {
+                width: 134%;
+            }
+
+
+            .fleet-management p {
+                width: 132%;
+            }
+
+            .social-analytics-text img {
+                width: 315px;
+                height: 226px;
+                margin-top: 30px;
+            }
+
+            .medical-device-text img {
+                width: 315px;
+                height: 309px;
+                margin-top: 30px;
+            }
+
+            .predictive-analytics img {
+                width: 315px;
+                height: 255px;
+                margin-top: 11px;
+            }
+
+            .fleet-management img {
+                width: 315px;
+                height: 167px;
+                margin-top: 30px;
+            }
+
+            .navbar-bottom-right {
+                top: 496px;
+            }
+
+
+        }
+
+        /* 1024px * 768px */
+
+        @media only screen and (min-width: 1000px) and (max-width: 1024px) {
+            .main-jumbotron {
+                height: 460px;
+                margin-top: 83px;
+            }
+
+            .healthcare-main-icon {
+                width: 60px;
+                height: 27px;
+            }
+
+            .healthcare-head-content {
+                position: absolute;
+                left: 8.5%;
+                top: 20%;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 30%;
+                font-size: 10px;
+                line-height: 128%;
+            }
+
+            .healthcare-head-content-p2 {
+                margin-top: 20px;
+                font-size: 10px;
+            }
+
+            .orange-bullet {
+                height: 15px;
+            }
+
+            .orange-bullet1 {
+                height: 15px;
+                margin-right: 11px;
+            }
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2,
+            .orange-bullet-points-3 {
+                font-size: 10px;
+            }
+
+            .healthcare-services-heading {
+                font-size: 11px;
+            }
+
+            .healthcare-head-content-p3 {
+                font-size: 10px;
+            }
+
+            .social-analytics h1,
+            .medical-device h1,
+            .clinical-research h1,
+            .ai-diagnostics h1 {
+                font-size: 18px;
+            }
+
+            .social-analytics-text p {
+                width: 120%;
+            }
+
+            .medical-device-text .last-p1,
+            .last-p2 {
+                width: 117%;
+            }
+
+            .predictive-analytics p {
+                width: 118%;
+            }
+
+            .fleet-management p {
+                width: 117%;
+            }
+
+            .social-analytics-text img {
+                width: 179px;
+                height: 128px;
+                margin-top: 30px;
+            }
+
+            .medical-device-text img {
+                width: 179px;
+                height: 176px;
+                margin-top: 30px;
+            }
+
+            .predictive-analytics img {
+                width: 179px;
+                height: 145px;
+                margin-top: 30px;
+            }
+
+            .fleet-management img {
+                width: 179px;
+                height: 95px;
+                margin-top: 30px;
+            }
+
+            .navbar-bottom-right {
+                top: 505px;
+            }
+
+            h1 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            ul {
+                font-size: 10px;
+            }
+
+            li {
+                font-size: 10px;
+            }
+
+        }
+
+        /* For Tablets*/
+        @media only screen and (min-width: 500px) and (max-width: 800px) {}
+
+        /* for mobile devices */
+        @media only screen and (min-width: 320px) and (max-width: 600px) {
+            .logo {
+                margin-left: -35px;
+            }
+
+            .navbar-nav {
+                position: absolute;
+                top: 15%;
+                left: 85%;
+            }
+
+            .ul {
+                width: max-content;
+            }
+
+            .wrap {
+                width: max-content;
+            }
+
+            .main-jumbotron {
+                background-size: 21%;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 144%;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+
+            .social-analytics-text p {
+                width: 28%;
+            }
+
+            .medical-device-text p {
+                width: 25%;
+            }
+
+            .healthcare-services-main-div {
+                padding: 30px 1.5%;
+                margin-top: -250px;
+            }
+
+            .orange-bullet-points-1 {
+                width: 150%;
+                padding-top: 0px;
+                margin-bottom: 0;
+            }
+
+            .healthcare-head-content-p2 {
+                margin-top: 0px;
+                font-size: 16px;
+            }
+
+            .healthcare-head-content-p3 {
+                width: 265%;
+                font-size: 16px;
+            }
+
+            .p-0 {
+                width: 200%;
+                margin-bottom: 0px;
+            }
+
+            .carousel-nav {
+                width: 190%;
+            }
+
+            .healthcare-main-icon {
+                width: 67px;
+                height: 30px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .using-state {
+                width: 55%;
+            }
+            
+            .manage-data{
+                width: 50%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand ml-5 mt-1" href="../index.html"><img class="logo" src="../resources/logo.png" alt=""
+                    loading="lazy"></a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+            <div class="navbar-items  ml-auto  ">
+                <div class=" navbar-expand float-right mt-n2" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+                        <li class="nav-item">
+                            <!-- <a class="" href="./newsroom.html">Newsroom
+                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+            </li> -->
+                        <li class="nav-item">
+                            <a class="" href="./csr.html">CSR
+                                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="./careers.html">Careers
+                                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="./contact.html">Contact
+                                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="extra-space">&nbsp;</div>
+                <div class="navbar-items2 d-flex align-items-end ml-auto mt-4 float-right mb-n4 ">
+                    <ul class="ul right-bar-nav ">
+
+                        <li class="home-icon-li "><a href="../index.html" class="list-a"><img class="home-icon-img"
+                                    src="../resources/Home icon.png" width="24px" height="22px" alt=""></a></li>
+                        <li class="li nav-item dropdown ">
+                            <a class=" nav-link dropdown-toggle industry-dropdown-heading" href="#"
+                                data-toggle="dropdown" style="color: black !important;padding: 0;">Industry
+                                Solutions</a>
+                            <ul class="dropdown-menu bg-light ">
+                                <li><a class=" dropdown-item " href=" ./healthcare.html"
+                                        style="color: black !important;">Healthcare</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./retail.html"
+                                        style="color: black !important;">Retail</a></li>
+                                <li><a class="dropdown-item" href="./automotive.html"
+                                        style="color: black !important;">Automotive</a></li>
+                                <li><a class="dropdown-item" href="./financial_services.html"
+                                        style="color: black !important;">Financial Services</a></li>
+                            </ul>
+
+                        </li>
+
+
+                        <li class="li "><a href="#" class="list-a">Services</a></li>
+                        <li class="li li1"><a href="./AboutKushagramati.html" class="list-a">About Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="navbar-bottom-right">
+
+            <a href="#manufacturing">Manufacturing Value Chain</a>
+            <a href="#warranty">Warranty Analytics</a>
+            <a href="#predictive">Predictive Analytics</a>
+            <a href="#fleet">Fleet Management / Analytics</a>
+            <a href="#top" style="border-bottom: none ;">Top</a>
+        </div>
+
+        <!-- Main Content -->
+        <!-- Navbar bottom -->
+
+        <!-- <div class="healthcare-navigation fixed-bottom">
+      <div class="healthcare-nav-items"><a class="nav-health" href="#top">Automotive</a> <img class="healthcare-arrow"
+          src="../resources/White arrow.png" alt="">
+        <div class="dropdown">
+          <div class="dropbtn1">SERVICES <img class="healthcare-arrow" src="../resources/White arrow.png" alt=""></div>
+          <div class="dropdown-content1  ">
+            <a href="#social">Manufacturing Value Chain</a><img class="services-arrow"
+              src="../resources/White arrow.png" alt="">
+            <a href="#medicaldevice">Warranty Analytics</a><img class="services-arrow"
+              src="../resources/White arrow.png" alt="">
+            <a href="#accelerating">Predictive Analytics</a><img class="services-arrow"
+              src="../resources/White arrow.png" alt="">
+            <a href="#ai">Fleet Management / Analytics</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+        <div class="jumbotron-background">
+            <div class="  carousel-nav text-light mt-1 row" style="z-index: 999;">
+                <a href="./leadership.html">LEADERSHIP</a>
+                <a href="#">PARTNERS</a>
+                <a href="#">AWARDS</a>
+                <a href="./values.html">VALUES</a>
+                <a href="./vision_and_mission.html" class="border-0">VISION & MISSION</a>
+            </div>
+
+            <div class="main-jumbotron d-flex align-items-center " id="healthcare">
+                <div class="healthcare-head-content" id="healthcare">
+                    <img class="healthcare-main-icon" src="../resources/Automotive icon.png" alt="">
+                    <h1>AUTOMOTIVE</h1>
+                    <p class="healthcare-head-content-p1">The automotive industry faces fierce competition in this new
+                        world and
+                        to thrive in this competitive world innovations are a must. Companies need to regularly upgrade
+                        themselves
+                        in order to have a competitive edge over others. Automotive companies deal with a massive data
+                        of its varied
+                        models and
+                        each model having varied components on a regular basis. Additionally, with software and sensors
+                        generated
+                        information conveying maintenance
+                        details, the automakers can accurately identify new purchase opportunity.</p>
+                    <p class="healthcare-head-content-p2">Challenges:</p>
+                    <div class="">
+
+                        <ul class=" p-0">
+
+                            <li class="d-flex">
+                                <img class="orange-bullet1" src="../resources/Arrow_orange.png" alt="">
+                                <p class="orange-bullet-points-1">Undistributed data across sales and business units</p>
+                            </li>
+                            <li class="d-flex">
+                                <img class=" orange-bullet1" src="../resources/Arrow_orange.png" alt="">
+                                <p class="orange-bullet-points-2">High inventory levels due to lack of proper
+                                    predictability</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="healthcare-head-content-p3">At Kushagramati we help our customers to optimize their
+                        service business
+                        processes by:</p>
+                    <div class="">
+
+                        <ul class="d-flex p-0">
+
+                            <li class="d-flex using-state">
+                                <img class="orange-bullet" src="../resources/Orange arrow.png" alt="">
+                                <p class="orange-bullet-points-1">Using state-of-the-art intelligent data analytics to
+                                    increase
+                                    operational efficiency</p>
+                            </li>
+                            <li class="d-flex manage-data">
+                                <img class=" orange-bullet" src="../resources/Orange arrow.png" alt="">
+                                <p class="orange-bullet-points-2">Manage data in the future to gather intelligence from
+                                    analysing data
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="healthcare-services-main-div">
+            <h1 class="healthcare-services-heading">AUTOMOTIVE SERVICES</h1>
+            <ul>
+                <li class="social-analytics">
+
+                    <div class=" social-analytics-text" id="manufacturing">
+                        <div class="img-width manufacturing_value" style="width: 40%;">
+                            <h1>Manufacturing Value Chain</h1>
+                            <p class="p-width01">The
+                                automotive industry has seen rapid development over the last decade. Today’s
+                                manufacturing
+                                environment is highly dynamic & complex and consists of various stakeholders like
+                                multiple suppliers &
+                                partners, distribution channels, fulfillment partners and customers. We at Kushagramati
+                                using our
+                                complex model, analyse different parts on
+                                the move across the
+                                manufacturing process to make sure they seamlessly work in tandem to bring down the cost
+                                and increase
+                                utilisation.</p>
+                        </div>
+                        <img src="../resources/Image-01.png" alt="manufacturing_value" class="manufacturing">
+                    </div>
+                </li>
+
+                <li class="medical-device">
+
+                    <div class="medical-device-text warranty_analytics-img" id="warranty">
+                        <div class="img-width" style="width: 40%;">
+                            <h1>Warranty Analytics</h1>
+                            <p class="p-width02 last-p1">
+                                The automotive industry continues to face a dynamic set of challenges. Warranty
+                                claims costs are a
+                                major concern for the automotive industry. With the analysis of user generated
+                                information, automakers
+                                can enhance the customer engagement and interaction with the brand through more targeted
+                                initiatives.
+                                At Kushagramati we provide warranty analytics that help customers to know
+                                more about future scenarios
+                                of claim costs to plan their fiscal year budget and take proactive actions accordingly.
+                            </p>
+                        </div>
+
+                        <img src="../resources/Image-02.png" alt="warranty_analysis" class="warranty">
+                    </div>
+                </li>
+
+                <li class="medical-device">
+
+                    <div class="medical-device-text predictive-analytics" id="predictive">
+                        <div class="img-width" style="width: 40%;">
+                            <h1>Predictive Analytics</h1>
+                            <p class="p-width last-p2">With Predictive
+                                analytics, quality management can process not only
+                                the large set
+                                historical information
+                                but also predict/prevent faults and defects. It allows for early detection of issues and
+                                minimizes the
+                                probability of its occurrence in future. Identification of a defect at the supplier
+                                level using
+                                analytics will greatly abate situations involving warranty claims. Optimisation of the
+                                supply chain
+                                management through predictive
+                                analytics is highly beneficial in
+                                predicting consumer demand and inventory management. Thus, analytics increases both
+                                customer
+                                satisfaction and quality management at a cost-effective level. At Kushagramati we aim to
+                                deliver a
+                                fulfilling user experience using
+                                predictive data analytics on
+                                structured & unstructured data. Benefits are improved Customer Satisfaction and enhanced
+                                performance and
+                                profitability.</p>
+                        </div>
+
+                        <img src="../resources/Image-03.png" alt="predictive_analysis" class="predictive">
+                    </div>
+                </li>
+                <li class="medical-device">
+
+                    <div class="medical-device-text fleet-management" id="fleet">
+                        <div class="img-width" style="width: 40%;">
+                            <h1>Fleet Management / Analytics</h1>
+                            <p class="p-width1 last-p3">Often, it is overlooked how much data a modern car posses
+                                and
+                                identification of the
+                                right information
+                                is crucial for effective fleet management. Analyzing the parameters that affect the
+                                performance of the
+                                vehicle is imperative to bolster development of a more efficient vehicle. Adopting a
+                                data-driven
+                                approach to fleet management is the most effective
+                                way to maximise the
+                                efficiency of the fleet while simultaneously minimizing the costs. At Kushagramati we
+                                aggregate the
+                                connected driver’s data and generate
+                                insights to optimise fleet
+                                management and services. We provide Data-driven automobile maintenance recommendations
+                                and analyse
+                                historical data to predict potential risks.</p>
+                        </div>
+
+                        <img src="../resources/Image-04.png" alt=" fleet_management" class="fleet">
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="spacebottom "></div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        window.scrollTo(0, 0);
+        AOS.init();
+    </script>
+
+
+
+
+
+</body>
+
+</html>
