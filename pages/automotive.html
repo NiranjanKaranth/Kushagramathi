@@ -228,7 +228,10 @@
         .healthcare-head-content-p3 {
             font-size: 18px;
             font-weight: 700;
+        }
 
+        .orange-bullet-p-width{
+            width: 20%;
         }
 
         .healthcare-services-main-div {
@@ -782,7 +785,65 @@
             li {
                 font-size: 10px;
             }
+        }
 
+        /* 992px * 320px */
+        @media only screen and (min-width: 320px) and (max-width: 992px) {
+            * {
+                color: rgba(0, 0, 0, 0.9);
+            }
+
+            .main-jumbotron {
+                height: 440px
+            }
+
+            .healthcare-services-main-div {
+                padding-top: 600px;
+            }
+
+            .healthcare-head-content {
+                top: 30%;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 68%;
+            }
+
+            .healthcare-head-content-p2 {
+                margin-top: 30px;
+            }
+
+            .orange-bullet1-p-width{
+                width: auto !important;
+            }
+
+            .orange-bullet2-p-width{
+                width: auto !important;
+            }
+
+            .social-analytics h1{
+                width: 112%;
+            }
+
+            .social-analytics-text p{
+                width: 192%;
+            }
+
+            .medical-device-text p{
+                width: 215%;
+            }
+
+            .predictive-analytics p{
+                width: 205%;
+            }
+
+            .fleet-management p{
+                width: 204%;
+            }
+
+            .medical-device h1{
+                width: 122%;
+            }
         }
     </style>
 
@@ -791,76 +852,84 @@
 <body>
     <div class="wrap">
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand ml-5 mt-1" href="../index.html"><img class="logo" src="../resources/logo.png" alt=""
+
+        <div class="top-nav bg-light">
+            <ul class="d-flex justify-content-end top-nav-buttons ">
+
+                <li class=" nav-item ">
+                    <a class="" href="./csr.html">CSR
+                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="" href="./careers.html">Careers
+                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="" href="./contact.html">Contact
+                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " style="top: 27px;">
+            <a class="navbar-brand ml-5 mt-n4" href="../index.html"><img class="logo" src="../resources/logo.png" alt=""
                     loading="lazy"></a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-            <div class="navbar-items  ml-auto  ">
-                <div class=" navbar-expand float-right mt-n2" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <!-- <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li> -->
-                        <li class="nav-item">
-                            <!-- <a class="" href="./newsroom.html">Newsroom
-                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
-            </li> -->
-                        <li class="nav-item">
-                            <a class="" href="./csr.html">CSR
-                                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="" href="./careers.html">Careers
-                                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="" href="./contact.html">Contact
-                                <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="extra-space">&nbsp;</div>
-                <div class="navbar-items2 d-flex align-items-end ml-auto mt-4 float-right mb-n4 ">
-                    <ul class="ul right-bar-nav ">
 
-                        <li class="home-icon-li "><a href="../index.html" class="list-a"><img class="home-icon-img"
-                                    src="../resources/Home icon.png" width="24px" height="22px" alt=""></a></li>
-                        <li class="li nav-item dropdown ">
-                            <a class=" nav-link dropdown-toggle industry-dropdown-heading" href="#"
-                                data-toggle="dropdown" style="color: black !important;padding: 0;">Industry
-                                Solutions</a>
-                            <ul class="dropdown-menu bg-light ">
-                                <li><a class=" dropdown-item " href=" ./healthcare.html"
-                                        style="color: black !important;">Healthcare</a>
-                                </li>
-                                <li><a class="dropdown-item" href="./retail.html"
-                                        style="color: black !important;">Retail</a></li>
-                                <li><a class="dropdown-item" href="./automotive.html"
-                                        style="color: black !important;">Automotive</a></li>
-                                <li><a class="dropdown-item" href="./financial_services.html"
-                                        style="color: black !important;">Financial Services</a></li>
-                            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar  ml-auto display-list-mob">
+                    <li class="nav-item home-icon-li "><a href="../index.html" class=" "><img class="home-icon-img"
+                                src="../resources/Home icon.png" alt=""></a></li>
+
+                    <li class="nav-item dropdown" style="color: black !important;">
+                        <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color: black !important; font-size: 16px; ">
+                            Industry
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class=" dropdown-item " href=" ./healthcare.html"
+                                style="color: black !important; font-size: 16px; ">Healthcare</a>
+                            <a class="dropdown-item" href="./retail.html"
+                                style="color: black !important; font-size: 16px; ">Retail</a>
+
+                            <a class="dropdown-item" href="./automotive.html"
+                                style="color: black !important; font-size: 16px; ">Automotive</a>
+                            <a class="dropdown-item" href="./financial_services.html"
+                                style="color: black !important; font-size: 16px; ">Financial Services</a>
+                        </div>
+                    </li>
 
 
-                        <li class="li "><a href="./pages/Services.html" class="list-a">Services</a></li>
-                        <li class="li li1"><a href="./AboutKushagramati.html" class="list-a">About Us</a></li>
-                    </ul>
-                </div>
+                    <li class="nav-item">
+                        <a href="./pages/Services.html" class=" nav-link"
+                            style="color: black !important; font-size: 16px; ">Services</a>
+                    </li>
+                    </li>
+                    <li class="nav-item border-0">
+                        <a href="./AboutKushagramati.html" class=" nav-link"
+                            style="color: black !important; font-size: 16px; ">About Us</a>
+                    </li>
+                    </li>
+                </ul>
 
             </div>
         </nav>
-        <div class="navbar-bottom-right">
+        <!-- Navbar Ends -->
+        <!-- <div class="navbar-bottom-right">
 
             <a href="#manufacturing">Manufacturing Value Chain</a>
             <a href="#warranty">Warranty Analytics</a>
             <a href="#predictive">Predictive Analytics</a>
             <a href="#fleet">Fleet Management / Analytics</a>
             <a href="#top" style="border-bottom: none ;">Top</a>
-        </div>
+        </div> -->
 
         <!-- Main Content -->
         <!-- Navbar bottom -->
@@ -931,13 +1000,13 @@
 
                         <ul class="d-flex p-0">
 
-                            <li class="d-flex" style="width: 20%;">
+                            <li class="d-flex orange-bullet1-p-width" style="width: 20%;">
                                 <img class="orange-bullet" src="../resources/Orange arrow.png" alt="">
                                 <p class="orange-bullet-points-1">Using state-of-the-art intelligent data analytics to
                                     increase
                                     operational efficiency</p>
                             </li>
-                            <li class="d-flex" style="width: 16%;">
+                            <li class="d-flex orange-bullet2-p-width" style="width: 16%;">
                                 <img class=" orange-bullet" src="../resources/Orange arrow.png" alt="">
                                 <p class="orange-bullet-points-2">Manage data in the future to gather intelligence from
                                     analysing data
