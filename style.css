@@ -135,6 +135,7 @@ position: absolute;
   width: 100%;
   top: 0%;
   padding-right: 24px;
+  z-index: 999;
 
 
 
@@ -151,23 +152,12 @@ position: absolute;
   padding: 10px 10px 4px;
 }
 
-@media all and (max-width: 992px) {
-  .display-list-mob {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      width: 20%;
-  }
-
-  .navbar li {
-      border-right: none;
-      text-align: left;
-  }
-
-
-
-
+.nav-font-size{
+   font-size: 16px !important;
 }
+
+
+
 
 /* Navbar Updated End */
 
@@ -482,6 +472,42 @@ margin-top: 83px;
 
   font-size: 12px !important;
 }
+
+
+}
+
+@media only screen and (max-width: 992px) and (min-width: 320px){
+
+  .logo {
+    width: 210px;
+}
+  .display-list-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 22%;
+ 
+}
+
+
+
+.navbar li {
+    border-right: none;
+    text-align: left;
+}
+
+
+  .carousel-nav a {
+    padding-right: 10px !important;
+    font-size: 0.85rem !important;
+}
+
+.nav-item a {
+
+  font-size: 18px !important;
+}
+
+
 }
 
 @keyframes slidein6 {
