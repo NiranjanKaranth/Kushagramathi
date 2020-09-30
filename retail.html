@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Retail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="../style.css?v=timestamp">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Healthcare Industry */
+        /* Jumbotron */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+            color: rgba(255, 255, 255, 0.9);
+
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 115%;
+        }
+
+        ul {
+            font-size: 17px;
+        }
+
+        li {
+            font-size: 18px;
+        }
+
+        /* body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+} */
+
+
+        body[data-aos-duration='4000'] [data-aos],
+        [data-aos][data-aos][data-aos-duration='4000'] {
+            transition-duration: 4000ms;
+        }
+
+        .wrap {
+            width: 100%;
+        }
+
+        .jumbotron-background {
+            background-color: #370F5A;
+        }
+
+        .main-jumbotron {
+            background: url(../resources/retail_banner.png);
+            width: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-top: 83px !important;
+            margin: 0 auto;
+            height: 854px;
+
+        }
+
+        /* navigation */
+        .healthcare-navigation {
+            background-color: #FF4500;
+            height: 20px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            /* margin-top: -65px; */
+            color: white;
+            padding-left: 8.5%;
+
+        }
+
+        .healthcare-navigation li {
+            display: inline-block;
+            margin-right: 15px;
+
+
+        }
+
+        .healthcare-navigation a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+        .dropbtn1 {
+            background-color: #FF4500;
+            display: inline;
+            color: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 12px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content1 {
+            display: none;
+            /* position: absolute; */
+            z-index: 1;
+            min-width: 800px;
+        }
+
+
+
+        .dropdown-content1 a {
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 550;
+            font-size: 10px;
+        }
+
+        .dropdown:hover .dropdown-content1 {
+            display: inline-block;
+        }
+
+        .healthcare-arrow {
+            height: 9px;
+        }
+
+
+        .services-arrow {
+            height: 9px;
+
+            margin: 5px;
+
+        }
+
+
+        .nav-health {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-size: 18px;
+        }
+
+        .nav-services {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-size: 18px;
+        }
+
+        /* navigation ends */
+
+        /* main content */
+        /* New content added start */
+        .healthcare-head-content {
+            position: absolute;
+            left: 8.5%;
+            top: 25%;
+
+        }
+
+        .retail-main-icon {
+            width: 51px;
+            height: 39px;
+            margin-bottom: 20px;
+
+        }
+
+        .heathcare-head-content p {
+            width: 70%;
+        }
+
+        .healthcare-head-content-p1 {
+            width: 28%;
+            font-size: 18px;
+            line-height: 128%;
+        }
+
+        .healthcare-head-content-p2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+
+        .healthcare-head-content-p2-ul * {
+            font-size: 18px;
+            margin-bottom: 0px;
+
+        }
+
+        .healthcare-head-content-p1 span::before {
+            content: "\A";
+            white-space: pre;
+        }
+
+        .orange-arrow {
+            height: 14px;
+            margin-right: 10px;
+            margin-top: 3px;
+
+
+        }
+
+        .orange-bullet {
+            height: 25px;
+            margin-right: 11px;
+
+        }
+
+        .orange-bullet-points-1 {
+            width: 90%;
+            padding-top: 5px;
+            padding-right: 36px;
+            font-size: 18px;
+            line-height: 115%;
+        }
+
+        .orange-bullet-points-2 {
+            width: 88%;
+            padding-top: 5px;
+            padding-right: 0;
+            font-size: 18px;
+            line-height: 115%;
+        }
+
+
+        .orange-bullet-points-3 {
+            width: 90%;
+            padding-top: 5px;
+            padding-right: 13px;
+            font-size: 18px;
+            line-height: 115%;
+
+        }
+
+        .orange-bullet-points-1 span::before,
+        .orange-bullet-points-2 span::before,
+        .orange-bullet-points-3 span::before {
+            content: "\A";
+            white-space: pre;
+        }
+
+
+        .bullet-spacing-point-2 {
+            width: 12.6%;
+        }
+
+        .bullet-spacing-point-3 {
+            width: 14.3%;
+        }
+
+        .healthcare-head-content-p3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 40px;
+        }
+
+        .healthcare-services-main-div {
+            width: 100%;
+            padding: 30px 8.5%;
+        }
+
+        .healthcare-services-main-div * {
+            color: rgba(0, 0, 0, 0.9);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+
+        .healthcare-services-heading {
+            color: #5d318a;
+            letter-spacing: 7px;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+
+        .social-analytics h1,
+        .medical-device h1,
+        .clinical-research h1,
+        .ai-diagnostics h1 {
+            margin: 20px 0 20px 0;
+            font-size: 30px;
+        }
+
+        .social-analytics-textbox-div {
+            width: 42%
+        }
+
+        .social-analytics-text p {
+            width: 104%;
+            /* border-bottom: 1px solid rgba(0, 0, 0, 0.9); */
+            padding-bottom: 10px;
+        }
+
+        .accelerating-clinical-textbox p:last-child {
+            width: 122%;
+            /* border-bottom: 1px solid rgba(0, 0, 0, 0.9); */
+            padding-bottom: 94px;
+        }
+
+        .social-analytics-text-img {
+            width: 325px;
+            height: 192px;
+            margin-bottom: 88px;
+        }
+
+
+
+        .customer-behaviour-p2 {
+            margin-top: 10px;
+        }
+
+
+        .medical-device-text-div {
+            width: 42%;
+        }
+
+        .medical-device-text p {
+            width: 105%;
+        }
+
+        .churn {
+            width: 100% !important;
+        }
+
+        .next {
+            width: 101% !important;
+        }
+
+        .next-best-p2 {
+            width: 106% !important;
+            margin-top: 10px;
+        }
+
+        .medical-device-text-img {
+            width: 325px;
+            height: 221px;
+            margin-bottom: 88px;
+            margin-top: 20px;
+        }
+
+        .medical-device-ul-div {
+            /* border-bottom: 1px solid rgba(0, 0, 0, 0.9); */
+            width: 85%;
+            padding-bottom: 21px;
+        }
+
+        .customer-behaviour-ul-div {
+            /* border-bottom: 1px solid rgba(0, 0, 0, 0.9); */
+            width: 85%;
+            padding-bottom: 10px;
+        }
+
+
+        .medical-device-ul-div ul {
+            margin-top: 10px;
+        }
+
+        .customer-behaviour-ul-div ul {
+            margin-top: 10px;
+        }
+
+        .medical-device-ul-div img {
+            width: 15px;
+            height: 11px;
+            position: relative;
+            top: 3px;
+            margin-top: 0;
+        }
+
+        .customer-behaviour-ul-div img {
+            width: 15px;
+            height: 11px;
+            position: relative;
+            top: 3px;
+            margin-top: 0;
+        }
+
+        .alerts-for-mediaq {
+            width: 90%;
+            line-height: 115%;
+
+        }
+
+        .proactively-mediaq {
+
+            width: 69%;
+            line-height: 115%;
+        }
+
+        .churn-rate-p2 {
+            margin-top: 10px;
+        }
+
+        .acclerating-clinical-img {
+            width: 325px;
+            height: 142px;
+            margin-bottom: 88px;
+            margin-top: -20px;
+        }
+
+        .accelerating-clinical-textbox {
+            width: 42%;
+            height: 220px;
+        }
+
+
+        .ai-leveraged-textbox {
+            width: 42%;
+        }
+
+        .ai-levaraged-text-img {
+            width: 325px;
+            height: 131px;
+            margin-bottom: 88px;
+            margin-top: 20px;
+        }
+
+        .healthcare-nav-items a {
+            font-size: 12px;
+        }
+
+        .spacebottom {
+            height: 30px;
+        }
+
+        #social {
+            scroll-margin-top: 90px !important;
+        }
+
+        #medicaldevice {
+            scroll-margin-top: 90px !important;
+        }
+
+        #accelerating {
+            scroll-margin-top: 90px !important;
+        }
+
+        #ai {
+            scroll-margin-top: 90px !important;
+        }
+
+
+        /* New content added end */
+
+
+
+        /* Media Query */
+
+        @media only screen and (min-width: 1367px) and (max-width: 1600px) {
+            .main-jumbotron {
+                height: 710px;
+            }
+
+            .navbar-bottom-right {
+                color: #d69cff;
+                position: fixed;
+                display: block;
+                z-index: 999;
+                right: 13%;
+                top: 625px;
+            }
+
+            .healthcare-head-content {
+                top: 22%;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 27%;
+                font-size: 16px;
+                line-height: 128%;
+            }
+
+            .healthcare-head-content-p2 {
+                margin-top: 63px;
+            }
+
+            .healthcare-head-content-p2 {
+                font-size: 16px;
+            }
+
+
+            .healthcare-head-content-p2-ul * {
+                font-size: 16px;
+            }
+
+
+            .orange-bullet {
+                height: 23px;
+            }
+
+            .orange-arrow {
+                height: 14px;
+                margin-right: 10px;
+                margin-top: 1px;
+            }
+
+
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2,
+            .orange-bullet-points-3 {
+                font-size: 16px;
+            }
+
+            .orange-bullet-points-3 {
+                padding-right: 0px;
+            }
+
+            .bullet-spacing-point-2 {
+                width: 14%;
+            }
+
+            .bullet-spacing-point-3 {
+                width: 15.6%;
+            }
+
+            .healthcare-head-content-p3 {
+                font-size: 16px;
+            }
+
+            .healthcare-services-heading {
+                font-size: 17px;
+            }
+
+            .social-analytics h1,
+            .medical-device h1,
+            .clinical-research h1,
+            .ai-diagnostics h1 {
+                font-size: 30px;
+            }
+
+            .social-analytics-textbox-div {
+                width: 57%;
+            }
+
+            .social-analytics-text p {
+                width: 95%;
+            }
+
+            .social-analytics-text-img {
+                width: 325px;
+                height: 192px;
+                margin-bottom: 155px;
+            }
+
+            .medical-device-text-div {
+                width: 50%;
+            }
+
+            .medical-device-textbox-div {
+                width: 49% !important;
+            }
+
+            .medical-device-text p {
+                width: 105%;
+            }
+
+            .medical-device-text-img {
+                width: 325px;
+                height: 221px;
+                margin-top: 20px;
+            }
+
+            .accelerating-clinical-textbox {
+                width: 50%;
+            }
+
+            .accelerating-clinical-textbox p {
+                width: 101% !important;
+            }
+
+
+            .acclerating-clinical-img {
+                width: 325px;
+                height: 142px;
+                margin-bottom: 300px;
+            }
+
+            .ai-leveraged-textbox {
+                width: 50%;
+            }
+
+            .ai-leveraged-textbox p {
+                width: 101% !important;
+            }
+
+            .ai-levaraged-text-img {
+                width: 325px;
+                height: 131px;
+                margin-top: 35px;
+                margin-bottom: 185px;
+            }
+
+            .bullet-points-3-margin {
+                margin-left: 18px;
+            }
+
+            .navbar-bottom-right {
+                right: 17.5%;
+                top: 590px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            ul {
+                font-size: 17px;
+            }
+
+            li {
+                font-size: 18px;
+            }
+
+        }
+
+        @media only screen and (min-width: 1281px) and (max-width: 1366px) {
+            .main-jumbotron {
+                height: 605px;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 29%;
+                font-size: 13px;
+                line-height: 128%;
+            }
+
+            .healthcare-head-content-p2 {
+                font-size: 13px;
+                margin-top: 20px;
+            }
+
+
+            .healthcare-head-content-p3 {
+                font-size: 13px;
+            }
+
+            .orange-bullet {
+                height: 19px;
+            }
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2,
+            .orange-bullet-points-3 {
+                font-size: 13px;
+            }
+
+            .healthcare-services-heading {
+                font-size: 17px;
+            }
+
+            .healthcare-head-content-p2-ul * {
+                font-size: 13px;
+                margin-top: 3px;
+            }
+
+            .social-analytics h1,
+            .medical-device h1,
+            .clinical-research h1,
+            .ai-diagnostics h1 {
+                margin: 15px 0 15px 0;
+                font-size: 30px;
+            }
+
+            .social-analytics-textbox-div {
+                width: 51%;
+
+            }
+
+            .social-analytics-text p {
+                width: 124%;
+            }
+
+            .social-analytics-text-img {
+                width: 305px;
+                height: 180px;
+                margin-top: 20px;
+            }
+
+            .medical-device-text-div {
+                width: 59%;
+            }
+
+            .medical-device-textbox-div {
+                width: 49% !important;
+            }
+
+            .medical-device-text p {
+                width: 105%;
+            }
+
+            .medical-device-text-img {
+                width: 305px;
+                height: 207px;
+                margin-top: 20px;
+            }
+
+            .accelerating-clinical-textbox {
+                width: 59%;
+                height: 155px;
+            }
+
+            .accelerating-clinical-textbox p {
+                width: 72%;
+            }
+
+            .churn-rate-p2 {
+
+                width: 102% !important;
+            }
+
+            .acclerating-clinical-img {
+                width: 305px;
+                height: 113px;
+                margin-top: 40px;
+                margin-bottom: 210px;
+            }
+
+            .churn {
+                width: 100% !important;
+            }
+
+            .ai-leveraged-textbox {
+
+                width: 59%;
+            }
+
+            .ai-leveraged-textbox p {
+
+                width: 102% !important;
+            }
+
+            .ai-levaraged-text-img {
+                width: 305px;
+                height: 123px;
+                margin-top: 20px;
+            }
+
+            .bullet-points-3-margin {
+                margin-left: 18px;
+            }
+
+            .navbar-bottom-right {
+                right: 17.5%;
+                top: 496px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            ul {
+                font-size: 17px;
+            }
+
+            li {
+                font-size: 18px;
+            }
+
+        }
+
+        @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+            .main-jumbotron {
+                height: 575px;
+                margin-top: 65px;
+            }
+
+            .healthcare-head-content {
+                top: 22%;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 28%;
+                font-size: 13px;
+                line-height: 128%;
+            }
+
+            .healthcare-head-content-p2 {
+                margin-top: 55px;
+            }
+
+            .healthcare-head-content-p2 {
+                font-size: 12px;
+            }
+
+
+            .healthcare-head-content-p2-ul * {
+                font-size: 13px;
+            }
+
+            .orange-bullet {
+                height: 23px;
+            }
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2,
+            .orange-bullet-points-3 {
+
+                font-size: 12px;
+
+            }
+
+            .orange-bullet-points-3 {
+                padding-right: 0px;
+            }
+
+            .bullet-spacing-point-2 {
+                width: 14%;
+            }
+
+            .bullet-spacing-point-3 {
+                width: 15.6%;
+            }
+
+            .healthcare-head-content-p3 {
+                font-size: 12px;
+            }
+
+            .healthcare-services-heading {
+                font-size: 17px;
+            }
+
+
+            .social-analytics h1,
+            .medical-device h1,
+            .clinical-research h1,
+            .ai-diagnostics h1 {
+                font-size: 30px;
+            }
+
+            .social-analytics-textbox-div {
+                width: 51%;
+
+            }
+
+            .social-analytics-text p {
+                width: 128%;
+            }
+
+            .social-analytics-text-img {
+                width: 315px;
+                height: 186px;
+            }
+
+            .medical-device-text-div {
+                width: 59%;
+            }
+
+            .medical-device-textbox-div {
+                width: 49% !important;
+            }
+
+            .medical-device-text p {
+                width: 111%;
+            }
+
+            .medical-device-text-img {
+                width: 315px;
+                height: 214px;
+                margin-top: 20px;
+            }
+
+            .churn {
+                width: 104% !important;
+            }
+
+
+            .accelerating-clinical-textbox {
+                width: 59%;
+                height: 115px;
+            }
+
+            .accelerating-clinical-textbox p {
+                width: 70%;
+            }
+
+            .churn-rate-p2 {
+                width: 70% !important;
+            }
+
+            .acclerating-clinical-img {
+                width: 315px;
+                height: 137px;
+                margin-top: 130px;
+                margin-bottom: 130px;
+            }
+
+            .ai-leveraged-textbox {
+                width: 59%;
+            }
+
+            .ai-leveraged-textbox p {
+                width: 106% !important;
+            }
+
+            .ai-levaraged-text-img {
+                width: 398px;
+                height: 160px;
+                margin-top: 20px;
+            }
+
+            .bullet-points-3-margin {
+                margin-left: 18px;
+            }
+
+            .navbar-bottom-right {
+                right: 15.5%;
+                top: 450px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            ul {
+                font-size: 17px;
+            }
+
+            li {
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) and (max-width: 1024px) {
+            .main-jumbotron {
+                height: 452px;
+                margin-top: 65px;
+            }
+
+            .retail-main-icon {
+                width: 23px;
+                height: 17px;
+            }
+
+            .healthcare-head-content {
+                position: absolute;
+                left: 8.5%;
+                top: 18%;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 29%;
+                font-size: 10px;
+                line-height: 128%;
+            }
+
+            .orange-arrow {
+                height: 10px;
+            }
+
+            .healthcare-head-content-p2 {
+                font-size: 10px;
+                margin-top: 22px;
+            }
+
+
+
+            .healthcare-head-content-p2-ul * {
+                font-size: 10px;
+                margin-top: 3px;
+            }
+
+
+            .orange-bullet {
+                height: 15px;
+
+            }
+
+            .orange-bullet-points-1,
+            .orange-bullet-points-2,
+            .orange-bullet-points-3 {
+                font-size: 10px;
+                padding-right: 0;
+            }
+
+            .healthcare-services-heading {
+
+                font-size: 17px;
+
+            }
+
+            .social-analytics h1,
+            .medical-device h1,
+            .clinical-research h1,
+            .ai-diagnostics h1 {
+
+                font-size: 30px;
+            }
+
+
+            .healthcare-head-content-p3 {
+                font-size: 10px;
+                margin-top: 16px;
+            }
+
+            .social-analytics-textbox-div {
+                width: 47.8%;
+
+            }
+
+            .social-analytics-text p {
+                width: 96%;
+            }
+
+            .social-analytics-text-img {
+                width: 284px;
+                height: 168px;
+            }
+
+            .medical-device-textbox-div {
+                width: 59% !important;
+            }
+
+            .medical-device-text-div {
+                width: 59%;
+            }
+
+            .medical-device-text p {
+                width: 75%;
+            }
+
+            .medical-device-text-img {
+                width: 284px;
+                height: 193px;
+            }
+
+            .medical-device-ul-div img {
+                width: 9px;
+                height: 7px;
+            }
+
+            .customer-behaviour-ul-div img {
+                width: 9px;
+                height: 7px;
+            }
+
+            .alerts-for-mediaq {
+                width: 84%;
+
+            }
+
+            .proactively-mediaq {
+
+                width: 72%;
+            }
+
+
+            .accelerating-clinical-textbox {
+                width: 59% !important;
+            }
+
+            .accelerating-clinical-textbox p {
+                width: 72% !important;
+            }
+
+            .acclerating-clinical-img {
+                width: 284px;
+                height: 124px;
+                margin-top: 110px;
+            }
+
+            .ai-leveraged-textbox {
+                width: 60% !important;
+            }
+
+            .ai-leveraged-textbox p {
+                width: 71% !important;
+            }
+
+            .ai-levaraged-text-img {
+                width: 284px;
+                height: 115px;
+                margin-top: 30px;
+            }
+
+            h1 {
+                font-size: 17px;
+            }
+
+            .navbar-bottom-right {
+                right: 17.5%;
+                top: 410px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            ul {
+                font-size: 17px;
+            }
+
+            li {
+                font-size: 18px;
+            }
+
+            .bullet-points-3-margin {
+                margin-left: 18px;
+            }
+
+        }
+
+        /* 992px * 320px */
+        @media only screen and (min-width: 320px) and (max-width: 992px) {
+            * {
+                color: rgba(0, 0, 0, 0.9);
+            }
+
+            .carousel-nav a {
+                font-size: 0.85rem !important;
+                padding-right: 10px !important;
+            }
+
+            .main-jumbotron {
+                height: 440px;
+                margin-top: 137px !important;
+            }
+
+            .healthcare-services-main-div {
+                padding-top: 750px;
+            }
+
+            .healthcare-head-content {
+                top: 32%;
+            }
+
+            .healthcare-head-content-p1 {
+                width: 54%;
+            }
+
+            .healthcare-head-content-p3 {
+                width: 50%;
+            }
+
+            .flex-direction {
+                flex-direction: column;
+            }
+
+            .orange-bullet-points-1 span::before,
+            .orange-bullet-points-2 span::before,
+            .orange-bullet-points-3 span::before {
+                content: "\A";
+                white-space: nowrap;
+            }
+
+            .bullet-spacing-point-2 {
+                width: 38%;
+            }
+
+            .bullet-spacing-point-3 {
+                width: 60%;
+            }
+
+            .social-analytics h1 {
+                width: 108%
+            }
+
+            .social-analytics-text p {
+                width: 126%;
+            }
+
+            .medical-device h1 {
+                width: 140%;
+            }
+
+            .medical-device-text p {
+                width: 138%;
+            }
+
+            .predict {
+                width: 112%;
+            }
+
+            .increase {
+                width: 100% !important;
+            }
+
+            .churn {
+                width: 140% !important;
+            }
+
+            .acclerating-clinical-img {
+                margin-top: 40px;
+            }
+
+            .churn-rate-p2 {
+                width: 135% !important;
+            }
+
+            .next {
+                width: 150% !important;
+            }
+
+            .next-best-p2 {
+                width: 143% !important;
+            }
+
+            .navbar-bottom-right {
+                top: 395px;
+            }
+
+            .navbar-bottom-right a {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Navbar -->
+
+
+
+
+
+        <div class="top-nav bg-light">
+            <ul class="d-flex justify-content-end top-nav-buttons ">
+
+                <li class=" nav-item ">
+                    <a class="" href="./csr.html">CSR
+                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="" href="./careers.html">Careers
+                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="" href="./contact.html">Contact
+                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-top ">
+            <a class="navbar-brand ml-5 mt-n4" href="../index.html"><img class="logo" src="../resources/logo.png" alt=""
+                    loading="lazy"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar  ml-auto display-list-mob">
+                    <li class="nav-item home-icon-li "><a href="../index.html" class=" "><img class="home-icon-img"
+                                src="../resources/Home icon.png" alt=""></a></li>
+
+                    <li class="nav-item dropdown" style="color: black !important;">
+                        <a class=" nav-link dropdown-toggle nav-font-size" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color: black !important; ">
+                            Industry
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class=" dropdown-item nav-font-size " href=" ./healthcare.html"
+                                style="color: black !important;  ">Healthcare</a>
+                            <a class="dropdown-item nav-font-size" href="./retail.html"
+                                style="color: black !important; ">Retail</a>
+
+                            <a class="dropdown-item nav-font-size" href="./automotive.html"
+                                style="color: black !important; ">Automotive</a>
+                            <a class="dropdown-item nav-font-size" href="./financial_services.html"
+                                style="color: black !important;  ">Financial Services</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="./Services.html" class=" nav-link nav-font-size"
+                            style="color: black !important; ">Services</a>
+                    </li>
+                    </li>
+                    <li class="nav-item border-0">
+                        <a href="./AboutKushagramati.html" class=" nav-link nav-font-size"
+                            style="color: black !important; ">About
+                            Us</a>
+                    </li>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- Navbar Ends -->
+
+        <div class="navbar-bottom-right">
+            <a href="#social">Supply Chain Management</a>
+            <a href="#medicaldevice">Customer Behaviour Analysis</a>
+            <a href="#accelerating">Churn Rate Reduction</a>
+            <a href="#ai">Next Best and Personalized Offers</a>
+            <a href="#top" style="border-bottom: none ;">Top</a>
+
+        </div>
+
+        <!-- Main Content -->
+        <!-- Navbar bottom -->
+
+        <!-- <div class="healthcare-navigation fixed-bottom">
+            <div class="healthcare-nav-items"><a class="nav-health" href="#top">HEALTHCARE</a> <img
+                    class="healthcare-arrow" src="../resources/White arrow.png" alt="">
+                <div class="dropdown">
+                    <div class="dropbtn1">SERVICES <img class="healthcare-arrow" src="../resources/White arrow.png"
+                            alt=""></div>
+                    <div class="dropdown-content1  ">
+                        <a href="#social">Social Analytics</a><img class="services-arrow"
+                            src="../resources/White arrow.png" alt="">
+                        <a href="#medicaldevice">Medical Device Analytics (IoT)</a><img class="services-arrow"
+                            src="../resources/White arrow.png" alt="">
+                        <a href="#accelerating">Accelerating Clinical Research</a><img class="services-arrow"
+                            src="../resources/White arrow.png" alt="">
+                        <a href="#ai">AI Leveraged Diagnostics</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="jumbotron-background">
+            <div class="  carousel-nav text-light mt-1 row" style="z-index: 999;">
+                <a href="./leadership.html">LEADERSHIP</a>
+                <a href="./partners.html">PARTNERS</a>
+                <a href="./awards.html">AWARDS</a>
+                <a href="./values.html">VALUES</a>
+                <a href="./vision_and_mission.html" class="border-0">VISION & MISSION</a>
+            </div>
+
+            <div class="main-jumbotron d-flex align-items-center p-5" id="healthcare">
+                <div class="healthcare-head-content" id="healthcare">
+                    <img class="retail-main-icon" src="../resources/Retail icon.png" alt="">
+                    <h1>RETAIL </h1>
+                    <p class="healthcare-head-content-p1">The robust outlook of the retail industry, coupled with the
+                        digital revolution aided by technological advancements and proliferation of smartphones, has
+                        encouraged retailers to rethink their business strategies and make the most of the opportunity.
+                        With the growth of e-commerce, customer preferences and behaviours have changed drastically
+                        towards personalized and tailored shopping experience.</p>
+
+                    <p class="healthcare-head-content-p2">The top challenges seen in the current market are:</p>
+                    <div class="">
+
+                        <ul class="healthcare-head-content-p2-ul p-0">
+
+                            <li class=" d-flex">
+                                <img class="orange-arrow" src="../resources/Arrow_orange.png" alt="">
+                                <p class=" ">Multichannel buying experiences
+                                </p>
+                            </li>
+                            <li class="d-flex">
+                                <img class=" orange-arrow" src="../resources/Arrow_orange.png" alt="">
+                                <p class="">Maintaining customer loyalty
+                                    with changing
+                                    expectations</p>
+                            </li>
+                            <li class="d-flex">
+                                <img class="orange-arrow" src="../resources/Arrow_orange.png" alt="">
+                                <p class="">Managing internal communication
+                                </p>
+                            </li>
+                            <li class="d-flex">
+                                <img class="orange-arrow" src="../resources/Arrow_orange.png" alt="">
+                                <p class="">Security and privacy</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="healthcare-head-content-p3">At Kushagramati we help our Retailers to optimize their
+                        business
+                        processes by:</p>
+                    <div class="">
+
+                        <ul class="d-flex p-0 flex-direction">
+
+                            <li class=" d-flex">
+                                <img class="orange-bullet" src="../resources/Orange arrow.png" alt="">
+                                <p class="orange-bullet-points-1">Forecasting trends</p>
+                            </li>
+                            <li class="d-flex bullet-spacing-point-2">
+                                <img class=" orange-bullet" src="../resources/Orange arrow.png" alt="">
+                                <p class="orange-bullet-points-2">Performance and <span> demand prediction</span></p>
+                            </li>
+                            <li class="d-flex bullet-spacing-point-3">
+                                <img class="orange-bullet" src="../resources/Orange arrow.png" alt="">
+                                <p class="orange-bullet-points-3">Price optimization with <span> highest return on
+                                    </span> <span>
+                                        investment
+                                        (ROI)</span></p>
+                            </li>
+                            <li class="d-flex">
+                                <img class="orange-bullet" src="../resources/Orange arrow.png" alt="">
+                                <p class="orange-bullet-points-3">Enable data <span>driven decisions</span></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="healthcare-services-main-div">
+            <h1 class="healthcare-services-heading">RETAIL SERVICES</h1>
+            <ul>
+                <li class="social-analytics">
+
+                    <div class=" social-analytics-text 
+                " id="social">
+                        <div class="social-analytics-textbox-div">
+                            <h1>Supply Chain Management</h1>
+                            <p style="border: none; padding-bottom: 0;">Data analytics can be used to improve delivery
+                                times and identify
+                                ways to reduce the
+                                communication gap
+                                between manufacturers and suppliers. Our analytics reports enable decision-makers to
+                                achieve operational
+                                efficiency and monitor performance to improve productivity. We augment data-driven
+                                decisions to reduce
+                                costs and improve service levels.</p>
+                            <div class=" medical-device-ul-div d-flex justify-content-left">
+
+                                <ul> <strong style="color: #786592;">
+                                        Benefits:</strong>
+                                    <li class="d-flex justify-content-left "> <img src="../resources/Black arrow.png"
+                                            alt="">&nbsp;Real-time supply chain execution
+                                    </li>
+                                    <li class="d-flex justify-content-left "><img src="../resources/Black arrow.png"
+                                            alt="">&nbsp;Improved
+                                        demand planning</li>
+                                    <li class="d-flex justify-content-left "><img src="../resources/Black arrow.png"
+                                            alt="">&nbsp;Enhanced
+                                        order optimization</li>
+                                    <li class="d-flex justify-content-left "><img src="../resources/Black arrow.png"
+                                            alt="">&nbsp;Inventory movement analytics</li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                        <img class="social-analytics-text-img" src="../resources/supply_chain.png" alt="">
+                    </div>
+                </li>
+                <li class="medical-device">
+
+                    <div class="medical-device-text " id="medicaldevice">
+                        <div class=" medical-device-text-div ">
+                            <h1>Customer Behaviour Analysis</h1>
+                            <p>“Know Your Customer” is currently the success mantra for the eCommerce sector. In today’s
+                                technology
+                                rich environments, vast amounts of data are generated through social networks, mobile
+                                devices, Web,
+                                store kiosks ,geolocation digital sensors and automation interactions. Many retailers
+                                would like to
+                                access the data gathered to uncover valuable information related to customer opinions,
+                                habits and
+                                preferences. Volume, velocity and variety of unstructured information are the key
+                                challenges faced.</p>
+
+                            <p class="customer-behaviour-p2">Kushagramati analytic processes enable retailers to
+                                retrieve that
+                                information, gain vital ROI insights
+                                in the process and deliver real-time targeted communication with customers.</p>
+
+                            <div class=" customer-behaviour-ul-div d-flex justify-content-left">
+
+                                <ul style="width: 100%;"> <strong style="color: #786592;">
+                                        Benefits:</strong>
+                                    <li class="d-flex justify-content-left predict"> <img
+                                            src="../resources/Black arrow.png" alt="">&nbsp;Predict
+                                        customer demand and returns</li>
+                                    <li class="d-flex justify-content-left "><img src="../resources/Black arrow.png"
+                                            alt="">&nbsp;Localized demand forecast</li>
+                                    <li class="d-flex justify-content-left increase" style="
+                                    width: 70%;line-height: 115%;
+                                "><img src="../resources/Black arrow.png" alt="">&nbsp;Increase customer lifetime value
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+
+                        <img class="medical-device-text-img" src="../resources/customer_behaviour.png" alt="">
+                    </div>
+                </li>
+
+                <li class="medical-device">
+
+                    <div class="medical-device-text  " id="accelerating">
+                        <div class="accelerating-clinical-textbox">
+                            <h1>Churn Rate Reduction</h1>
+                            <p class="churn">A healthy and sustainable strategy for customer retention is very crucial.
+                                This can be
+                                achieved through
+                                data analysis. Customers with different needs have different behavioural patterns.
+                                Separating your
+                                customers into cohorts based on their behaviour relative to your product is very helpful
+                                in analyzing,
+                                anticipating and reducing churn.</p>
+                            <p class="churn-rate-p2">With varied analytics techniques like Prescriptive, Predictive,
+                                Descriptive,
+                                Diagnostic and Outcome
+                                Analytics, Kushagramati can provide the retention strategies.</p>
+
+                        </div>
+
+                        <img class="acclerating-clinical-img" src="../resources/churn_rate.png" alt="">
+                    </div>
+                </li>
+                <li class="medical-device">
+
+                    <div class="medical-device-text" id="ai">
+                        <div class="ai-leveraged-textbox">
+                            <h1>Next Best and Personalized Offers</h1>
+                            <p class="next">A next best offer (NBO) is a highly customized offer by a company or
+                                marketer, that
+                                guides the customer
+                                to the right merchandise, services, or information, at the right moment in time, at the
+                                most agreeable
+                                and attractive price, via the most convenient channel. The ability to make predictions
+                                based on past
+                                purchase data creates a world of possibilities for creative marketers.</p>
+                            <p class="next-best-p2">Kushagramati NBO service assembles prospect data points and
+                                automatically
+                                translates them into
+                                actionable insights, enabling marketing and sales teams to sell smarter. NBO service
+                                includes
+                                understanding your customers, analyzing their next move, creating personalized
+                                experiences for them to
+                                win more business and drive loyalty.</p>
+
+
+
+                        </div>
+
+                        <img class="ai-levaraged-text-img" src="../resources/next_best.png" alt="">
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="spacebottom "></div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        window.scrollTo(0, 0);
+        AOS.init();
+    </script>
+
+
+
+
+
+</body>
+
+</html>

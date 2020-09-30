@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>CSR</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="../style.css?v=timestamp">
+  <style>
+    * {
+      box-sizing: border-box;
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0;
+      padding: 0;
+    }
+
+    .healthcare-nav-items a {
+      font-size: 12px;
+    }
+
+    .leadership {
+      /* margin-top: 90px; */
+      width: 100%;
+    }
+
+    .main-jumbotron {
+      background: url(../resources/csr-banner.png);
+      width: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      margin: 0 auto;
+      /* height: 307px; */
+      height: 854px;
+      margin-top: 83px;
+    }
+
+    /* navigation */
+    .healthcare-navigation {
+      background-color: #8240c4;
+      height: 20px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      /* margin-top: -65px; */
+      color: white;
+      padding-left: 8.5%;
+    }
+
+    .healthcare-navigation li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .healthcare-navigation a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .dropbtn1 {
+      background-color: #8240c4;
+      display: inline;
+      color: rgba(255, 255, 255, 0.9);
+      border: none;
+      font-size: 12px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content1 {
+      display: none;
+      /* position: absolute; */
+      z-index: 1;
+      min-width: 800px;
+    }
+
+    .dropdown-content1 a {
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 550;
+      font-size: 10px;
+    }
+
+    .dropdown:hover .dropdown-content1 {
+      display: inline-block;
+    }
+
+    .healthcare-arrow {
+      height: 9px;
+    }
+
+    .services-arrow {
+      height: 9px;
+      margin: 5px;
+    }
+
+    .nav-health {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-size: 18px;
+    }
+
+    .nav-services {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-size: 18px;
+    }
+
+    /* navigation ends */
+
+    .mastead-text {
+      width: 100%;
+    }
+
+    .csr-h1 {
+      position: absolute;
+      left: 8.5%;
+      top: 25%;
+      font-size: 40px;
+    }
+
+    .csr-image {
+      width: 100%;
+    }
+
+    .csr-img-child {
+      width: 100%;
+    }
+
+    .csr-img {
+      width: 12%;
+      position: absolute;
+      left: 40%;
+      top: 55%;
+    }
+
+    /* Media Query */
+    @media only screen and (min-width: 1367px) and (max-width: 1600px) {
+
+      .csr-h1 {
+
+        top: 28%;
+
+      }
+    }
+
+    /* media query for 1366px */
+    @media only screen and (min-width: 1281px) and (max-width: 1366px) {
+      .mastead-text {
+        width: 100%;
+      }
+
+      .csr-h1 {
+        position: absolute;
+        left: 8.5%;
+        top: 31%;
+        font-size: 28px;
+      }
+
+      .csr-image {
+        width: 100%;
+      }
+
+      .csr-img-child {
+        width: 100%;
+      }
+
+      .csr-img {
+        width: 22%;
+        position: absolute;
+        left: 40%;
+        top: 55%;
+      }
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+      .csr-h1 {
+
+        top: 31%;
+        font-size: 28px;
+
+      }
+    }
+
+    @media only screen and (min-width: 1000px) and (max-width: 1024px) {
+
+      .csr-h1 {
+
+        top: 26.5%;
+        font-size: 26.5px;
+
+      }
+    }
+
+
+    /* mobile devices */
+    @media only screen and (min-width:320px) and (max-width:992px) {
+      .main-jumbotron {
+        margin-top: 137px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+
+
+
+
+
+  <div class="top-nav bg-light">
+    <ul class="d-flex justify-content-end top-nav-buttons ">
+
+      <li class=" nav-item ">
+        <a class="" href="./csr.html">CSR
+          <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+      </li>
+      <li class="nav-item ">
+        <a class="" href="./careers.html">Careers
+          <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+      </li>
+      <li class="nav-item ">
+        <a class="" href="./contact.html">Contact
+          <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+      </li>
+    </ul>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-top ">
+    <a class="navbar-brand ml-5 mt-n4" href="../index.html"><img class="logo" src="../resources/logo.png" alt=""
+        loading="lazy"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar  ml-auto display-list-mob">
+        <li class="nav-item home-icon-li "><a href="../index.html" class=" "><img class="home-icon-img"
+              src="../resources/Home icon.png" alt=""></a></li>
+
+        <li class="nav-item dropdown" style="color: black !important;">
+          <a class=" nav-link dropdown-toggle nav-font-size" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black !important; ">
+            Industry
+            Solutions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a class=" dropdown-item nav-font-size " href=" ./healthcare.html"
+              style="color: black !important;  ">Healthcare</a>
+            <a class="dropdown-item nav-font-size" href="./retail.html" style="color: black !important; ">Retail</a>
+
+            <a class="dropdown-item nav-font-size" href="./automotive.html"
+              style="color: black !important; ">Automotive</a>
+            <a class="dropdown-item nav-font-size" href="./financial_services.html"
+              style="color: black !important;  ">Financial Services</a>
+          </div>
+        </li>
+
+
+        <li class="nav-item">
+          <a href="./Services.html" class=" nav-link nav-font-size" style="color: black !important; ">Services</a>
+        </li>
+        </li>
+        <li class="nav-item border-0">
+          <a href="./AboutKushagramati.html" class=" nav-link nav-font-size" style="color: black !important; ">About
+            Us</a>
+        </li>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <!-- Main Content -->
+
+
+  <div class="leadership">
+
+    <div class="mastead-text">
+      <div class="main-jumbotron d-flex align-items-center " id="healthcare">
+
+        <h1 class="csr-h1">CSR</h1>
+      </div>
+    </div>
+    <div class="csr-image">
+      <div class="csr-img-child">
+        <img src="../resources/careers-img-under.png" class="csr-img">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
