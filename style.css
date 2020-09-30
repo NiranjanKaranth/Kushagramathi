@@ -537,7 +537,12 @@ margin-top: 83px;
   height: 14px;
  }
 
+ .carousel {
+  margin-top: 137px;
 }
+
+}
+
 
 @keyframes slidein6 {
   from {
