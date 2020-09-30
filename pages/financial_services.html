@@ -1470,7 +1470,6 @@
         @media only screen and (min-width: 320px) and (max-width: 992px) {
             .wrap {
                 width: 90%;
-
             }
 
             * {
@@ -1483,12 +1482,12 @@
             }
 
             .main-jumbotron {
-                height: 440px;
+                height: 439px;
                 width: 111%;
             }
 
             .healthcare-services-main-div {
-                padding-top: 750px;
+                padding-top:1050px;
             }
 
             .healthcare-head-content {
@@ -1497,9 +1496,8 @@
             }
 
 
-
-            .d-flex {
-                display: flex !important;
+            .direction {
+              flex-direction: column;
 
 
             }
@@ -1524,8 +1522,8 @@
                 margin-bottom: 40px;
                 width: 90%;
                 font-weight: 600;
-                text-align: left;
-                font-size: 34px;
+                text-align: justify;
+                font-size: 32px;
             }
 
             .healthcare-head-content-p2-ul {
@@ -1546,23 +1544,21 @@
 
             .orange-bullet-points-1 {
                 width: 81%;
-                font-size: 23px;
+                font-size: 30px;
             }
 
-            .orange-bullet-points-2 {
-                width: 82%;
-                font-size: 23px;
-
-            }
-
+        
             .orange-bullet-points-2 {
                 width: 86%;
-                font-size: 23px;
+                font-size: 30px;
             }
 
             .orange-bullet-points-3 {
                 width: 80%;
-                font-size: 23px;
+                font-size: 30px;
+            }
+            .orange1{
+                flex-direction: column;
             }
 
             .orange-bullet-points-1 span::before,
@@ -1574,10 +1570,7 @@
 
 
 
-            .healthcare-services-main-div {
-
-                padding-top: 900px;
-            }
+         
 
             .improve-health {
                 width: 96%;
@@ -1594,7 +1587,7 @@
 
             .social-analytics-text p {
                 font-size: 30px;
-                text-align:left;
+                text-align: left;
             }
 
             strong {
@@ -1622,13 +1615,15 @@
                 margin-left: 256px;
             }
 
-            .carousel-nav{
-            flex-direction: column;
-            line-height: 30px;
+            .carousel-nav {
+                flex-direction: column;
+                line-height: 50px;
             }
 
-            .carousel-nav a{
+            .carousel-nav a {
                 border-right: none;
+                font-size: 24px !important;
+
             }
 
             .navbar-bottom-right {
@@ -1640,8 +1635,7 @@
             }
 
             .orange-bullet {
-                height: 16px;
-
+                height: 30px !important;
                 margin-top: 5px;
             }
 
@@ -1650,12 +1644,16 @@
             }
 
             .social-analytics-text p {
-                width: 130%;
+                width: 126%;
 
             }
 
+            .medical-device-text-p-2 {
+                margin-top: 15px;
+            }
+
             .medical-device-text p {
-                width: 129%;
+                width: 120%;
             }
 
             .medical-device-textbox-div {
@@ -1673,11 +1671,11 @@
             }
 
             .alerts-for-mediaq {
-                width: 100% !important;
+                width: 100%;
             }
 
             .proactively-mediaq {
-                width: 100% !important;
+                width: 100%;
             }
 
             .accelerating-clinical-textbox {
@@ -1685,7 +1683,7 @@
             }
 
             .accelerating-clinical-textbox p {
-                width: 98% !important;
+                width: 98%;
             }
 
             .ai-leveraged-textbox {
@@ -1693,7 +1691,7 @@
             }
 
             .ai-leveraged-textbox p {
-                width: 100.4% !important;
+                width: 100.4%;
             }
 
 
@@ -1712,7 +1710,10 @@
                 margin-bottom: 16px;
             }
 
-
+            .healthcare-main-icon {
+                width: 60px;
+                height: 66px;
+            }
         }
     </style>
 
@@ -1797,7 +1798,7 @@
 
 
 
-        <!-- 
+        <!--         
         <div class="navbar-bottom-right">
 
             <a href="#fraud">Fraud Detection and Prevention</a>
@@ -1863,7 +1864,7 @@
                         business.</p>
                     <div class="bullet-points">
 
-                        <ul class="d-flex p-0">
+                        <ul class="d-flex p-0 direction ">
 
                             <li class=" d-flex">
                                 <img class="orange-bullet" src="../resources/Orange arrow.png" alt="">
