@@ -290,22 +290,22 @@
             margin-bottom: 250px;
         }
 
-        .predictive-analytics p {
+        .predictive-analytics-text p {
             width: 107%;
         }
 
-        .predictive-analytics img {
+        .predictive-analytics-text img {
             width: 325px;
             height: 264px;
             margin-top: 30px;
             margin-bottom: 88px;
         }
 
-        .fleet-management p {
+        .fleet-management-text p {
             width: 105%;
         }
 
-        .fleet-management img {
+        .fleet-management-text img {
             width: 325px;
             height: 172px;
             margin-top: 30px;
@@ -339,14 +339,6 @@
         }
 
         .predictive-analytics-p3 {
-            margin-top: 10px;
-        }
-
-        .fleet-management-p2 {
-            margin-top: 10px;
-        }
-
-        .fleet-management-p3 {
             margin-top: 10px;
         }
 
@@ -452,14 +444,14 @@
 
             }
 
-            .predictive-analytics img {
+            .predictive-analytics-text img {
                 width: 305px;
                 height: 247px;
                 margin-top: 30px;
 
             }
 
-            .fleet-management img {
+            .fleet-management-text img {
                 width: 305px;
                 height: 161px;
                 margin-top: 30px;
@@ -550,7 +542,7 @@
                 margin-top: 30px;
             }
 
-            .predictive-analytics img {
+            .predictive-analytics-text img {
                 width: 315px;
                 height: 255px;
                 margin-top: 30px;
@@ -558,7 +550,7 @@
 
             }
 
-            .fleet-management img {
+            .fleet-management-text img {
                 width: 315px;
                 height: 167px;
                 margin-top: 30px;
@@ -569,7 +561,7 @@
                 top: 625px;
             }
 
-            .fleet-management p {
+            .fleet-management-text p {
                 width: 105% !important;
             }
 
@@ -625,12 +617,12 @@
                 width: 139%
             }
 
-            .predictive-analytics p {
+            .predictive-analytics-text p {
                 width: 134%;
             }
 
 
-            .fleet-management p {
+            .fleet-management-text p {
                 width: 132%;
             }
 
@@ -646,13 +638,13 @@
                 margin-top: 30px;
             }
 
-            .predictive-analytics img {
+            .predictive-analytics-text img {
                 width: 315px;
                 height: 255px;
                 margin-top: 11px;
             }
 
-            .fleet-management img {
+            .fleet-management-text img {
                 width: 315px;
                 height: 167px;
                 margin-top: 30px;
@@ -734,11 +726,11 @@
                 width: 117%;
             }
 
-            .predictive-analytics p {
+            .predictive-analytics-text p {
                 width: 118%;
             }
 
-            .fleet-management p {
+            .fleet-management-text p {
                 width: 117%;
             }
 
@@ -754,13 +746,13 @@
                 margin-top: 30px;
             }
 
-            .predictive-analytics img {
+            .predictive-analytics-text img {
                 width: 179px;
                 height: 145px;
                 margin-top: 30px;
             }
 
-            .fleet-management img {
+            .fleet-management-text img {
                 width: 179px;
                 height: 95px;
                 margin-top: 30px;
@@ -793,18 +785,34 @@
                 color: rgba(0, 0, 0, 0.9);
             }
 
+            .carousel-nav {
+                flex-direction: column;
+                line-height: 50px;
+            }
+
             .carousel-nav a {
                 font-size: 0.85rem !important;
                 padding-right: 10px !important;
+                border-right: none;
+                font-size: 30px !important;
             }
 
             .main-jumbotron {
-                height: 440px;
-                margin-top: 137px;
+                height: 440px
+            }
+
+            h1 {
+                /* color: rgba(255, 255, 255, 0.9); */
+                font-size: 50px !important;
+                margin-top: 0px;
             }
 
             .healthcare-services-main-div {
-                padding-top: 750px;
+                padding-top: 820px;
+            }
+
+            .healthcare-services-heading{
+                margin-top: 100px;
             }
 
             .healthcare-head-content {
@@ -813,47 +821,86 @@
             }
 
             .healthcare-head-content-p1 {
-                width: 55%;
+                width: 91%;
+                font-size: 30px;
             }
 
             .healthcare-head-content-p2 {
                 margin-top: 30px;
+                margin-bottom: 40px;
+                width: 90%;
+                font-weight: 600;
+                text-align: left;
+                font-size: 34px;
             }
 
             .healthcare-head-content-p3 {
-                width: 60%;
+                width: 90%;
+                font-size: 34px;
+                margin-bottom: 40px;
+            }
+
+            .orange-bullet-points-1 {
+                width: 86%;
+                font-size: 24px;
+            }
+
+            .orange-bullet-points-2 {
+                width: 82%;
+                font-size: 24px;
+            }
+
+            .orange-bullet-points-2 {
+                width: 86%;
+                font-size: 24px;
+            }
+
+            .orange-bullet-points-3 {
+                width: 80%;
+                font-size: 24px;
+            }
+
+            .orange-bullet-points-1 span::before,
+            .orange-bullet-points-2 span::before,
+            .orange-bullet-points-3 span::before {
+                content: "\A";
+                white-space: nowrap;
             }
 
             .orange-bullet1-p-width {
-                width: 27% !important;
+                width: 50% !important;
             }
 
             .orange-bullet2-p-width {
-                width: 22% !important;
+                width: 40% !important;
             }
 
             .social-analytics h1 {
-                width: 112%;
+                width: 600px;
             }
 
-            .social-analytics-text p {
-                width: 150%;
+            .social-analytics-text p,
+            .medical-device-text p,
+            .predictive-analytics-text p,
+            .fleet-management-text p {
+                font-size: 30px;
+                width: 27em;
             }
 
-            .medical-device-text p {
-                width: 140%;
-            }
-
-            .predictive-analytics p {
-                width: 155%;
-            }
-
-            .fleet-management p {
-                width: 180%;
+            .social-analytics-text img,
+            .medical-device-text img,
+            .predictive-analytics-text img,
+            .fleet-management-text img {
+                margin-bottom: 45px;
+                margin-left: 256px;
             }
 
             .medical-device h1 {
-                width: 122%;
+                width: 660px;
+            }
+
+            .navbar-bottom-right {
+                display: none;
             }
 
             .navbar-bottom-right {
@@ -872,29 +919,7 @@
     <div class="wrap">
         <!-- Navbar -->
 
-
-
-
-
-        <div class="top-nav bg-light">
-            <ul class="d-flex justify-content-end top-nav-buttons ">
-
-                <li class=" nav-item ">
-                    <a class="" href="./csr.html">CSR
-                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="" href="./careers.html">Careers
-                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="" href="./contact.html">Contact
-                        <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
-                </li>
-            </ul>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-top ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " style="top: 27px;">
             <a class="navbar-brand ml-5 mt-n4" href="../index.html"><img class="logo" src="../resources/logo.png" alt=""
                     loading="lazy"></a>
 
@@ -903,42 +928,59 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <div class="top-nav bg-light">
+                <ul class="d-flex justify-content-end top-nav-buttons ">
+
+                    <li class=" nav-item" style="border-right: none">
+                        <a class="" href="./csr.html">CSR
+                            <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                    </li>
+                    <li class="nav-item" style="border-right: none">
+                        <a class="" href="./careers.html">Careers
+                            <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                    </li>
+                    <li class="nav-item" style="border-right: none">
+                        <a class="" href="./contact.html">Contact
+                            <img src="../resources/navbar_arrow.png" class="nav-arrow"></a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar  ml-auto display-list-mob">
                     <li class="nav-item home-icon-li "><a href="../index.html" class=" "><img class="home-icon-img"
                                 src="../resources/Home icon.png" alt=""></a></li>
 
                     <li class="nav-item dropdown" style="color: black !important;">
-                        <a class=" nav-link dropdown-toggle nav-font-size" href="#" id="navbarDropdown" role="button"
+                        <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            style="color: black !important; ">
+                            style="color: black !important; font-size: 16px; ">
                             Industry
                             Solutions
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                            <a class=" dropdown-item nav-font-size " href=" ./healthcare.html"
-                                style="color: black !important;  ">Healthcare</a>
-                            <a class="dropdown-item nav-font-size" href="./retail.html"
-                                style="color: black !important; ">Retail</a>
+                            <a class=" dropdown-item " href=" ./healthcare.html"
+                                style="color: black !important; font-size: 16px; ">Healthcare</a>
+                            <a class="dropdown-item" href="./retail.html"
+                                style="color: black !important; font-size: 16px; ">Retail</a>
 
-                            <a class="dropdown-item nav-font-size" href="./automotive.html"
-                                style="color: black !important; ">Automotive</a>
-                            <a class="dropdown-item nav-font-size" href="./financial_services.html"
-                                style="color: black !important;  ">Financial Services</a>
+                            <a class="dropdown-item" href="./automotive.html"
+                                style="color: black !important; font-size: 16px; ">Automotive</a>
+                            <a class="dropdown-item" href="./financial_services.html"
+                                style="color: black !important; font-size: 16px; ">Financial Services</a>
                         </div>
                     </li>
 
 
                     <li class="nav-item">
-                        <a href="./Services.html" class=" nav-link nav-font-size"
-                            style="color: black !important; ">Services</a>
+                        <a href="./pages/Services.html" class=" nav-link"
+                            style="color: black !important; font-size: 16px; ">Services</a>
                     </li>
                     </li>
                     <li class="nav-item border-0">
-                        <a href="./AboutKushagramati.html" class=" nav-link nav-font-size"
-                            style="color: black !important; ">About
-                            Us</a>
+                        <a href="./AboutKushagramati.html" class=" nav-link"
+                            style="color: black !important; font-size: 16px; ">About Us</a>
                     </li>
                     </li>
                 </ul>
@@ -982,7 +1024,8 @@
                 <a href="#">PARTNERS</a>
                 <a href="#">AWARDS</a>
                 <a href="./values.html">VALUES</a>
-                <a href="./vision_and_mission.html" class="border-0">VISION & MISSION</a>
+                <a href="./vision_and_mission.html">VISION & MISSION</a>
+                <a href="./blog_main.html" class="border-0">USE CASES</a>
             </div>
 
             <div class="main-jumbotron d-flex align-items-center " id="healthcare">
@@ -1093,7 +1136,7 @@
 
                 <li class="medical-device">
 
-                    <div class="medical-device-text predictive-analytics" id="predictive">
+                    <div class="medical-device-text predictive-analytics-text" id="predictive">
                         <div class="img-width" style="width: 40%;">
                             <h1>Predictive Analytics</h1>
                             <p class="p-width last-p2">With Predictive
@@ -1124,7 +1167,7 @@
                 </li>
                 <li class="medical-device">
 
-                    <div class="medical-device-text fleet-management" id="fleet">
+                    <div class="medical-device-text fleet-management-text" id="fleet">
                         <div class="img-width" style="width: 40%;">
                             <h1>Fleet Management / Analytics</h1>
                             <p class="p-width1 last-p3">Often, it is overlooked how much data a modern car posses
