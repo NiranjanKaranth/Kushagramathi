@@ -89,7 +89,6 @@ position: absolute;
   /* border-right: 2px solid #ff4500; */
   padding: 10px;
 /* border-right: 1px solid rgba(0, 0, 0, 0.9); */
-  
 }
 
 .home-icon-li{
@@ -101,10 +100,6 @@ position: absolute;
 }
 .ul a {
   color: black;
-}
-
-.navbar-top{
-  top: 27px;
 }
 
 .home-icon-img{
@@ -123,45 +118,46 @@ position: absolute;
 .navbar {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
-
-
 }
-
-
 
 .navbar li {
   border-right: 1px solid #7b6997;
 }
 
 .top-nav {
-  height: 28px;
+  height: 27px;
   position: fixed;
   width: 100%;
   top: 0%;
+  left: 0%;
   padding-right: 24px;
-  z-index: 999;
-
-
-
 }
 
 .top-nav-buttons {
   list-style-type: none;
 }
 
-
-
-
 .nav-link {
   padding: 10px 10px 4px;
 }
 
-.nav-font-size{
-   font-size: 16px !important;
+@media all and (max-width: 992px) {
+  .display-list-mob {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      width: 20%;
+  }
+
+  .navbar li {
+      border-right: none;
+      text-align: left;
+  }
+
+
+
+
 }
-
-
-
 
 /* Navbar Updated End */
 
@@ -448,7 +444,7 @@ margin-top: 83px;
   position: fixed;
   display: block;
   z-index: 999;
-  right: 13%;
+  right: 17.5%;
  top: 800px;
 
 }
@@ -457,7 +453,7 @@ margin-top: 83px;
   padding: 0px 0px;
   border-bottom: 1px solid #d69cff;
   display: block; 
-  color: #d69cff;
+  color: #FF4500;
   text-decoration: none;
 }
 
@@ -481,68 +477,11 @@ margin-top: 83px;
 }
 
 @media only screen and (max-width: 992px) and (min-width: 320px){
-
-  .logo {
-    width: 300px;
-}
-
-.top-nav {
-  height: 59px;
-
-}
-
-.navbar-top{
-  top: 59px;
-}
-
-.home-icon-img { 
-  width: 38px;
-  height: 35px;
-}
-
-.navbar {
-  padding-bottom: 10px !important;
-  
-}
-
-  .display-list-mob {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 35%; 
-}
-
-.navbar-toggler-icon {
-  width: 2.5em;
-  height: 2.5em;
-}
-
-.navbar li {
-    border-right: none;
-    text-align: left;
-}
-
-  .carousel-nav a {
-    padding-right: 10px !important;
+.carousel-nav a {
+    padding-right: 10px;
     font-size: 0.85rem !important;
 }
-
-.nav-item a {
-
-  font-size: 32px !important;
 }
-
-.nav-arrow {
-  width: 14px;
-  height: 14px;
- }
-
- .carousel {
-  margin-top: 137px;
-}
-
-}
-
 
 @keyframes slidein6 {
   from {
